@@ -2,7 +2,6 @@
 
 class Host:
 
-    def hello_host(self):
-        print('test host')
-
-host = Host()
+    @classmethod
+    def hello_host(self,args):
+        print'test host %d' % args
