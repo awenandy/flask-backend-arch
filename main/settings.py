@@ -8,7 +8,8 @@ class Config(object):
     ERROR_404_HELP = False
     MAX_CONTENT_LENGTH = 16 * 1024 * 1024 * 1024 * 1024
     SECRET_KEY = os.urandom(24)
-    
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
+ 
 class ProdConfig(Config):
     """Production configuration."""
     ENV = 'prod'
